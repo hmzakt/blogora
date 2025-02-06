@@ -1,0 +1,52 @@
+Services used :- 
+1. appwrite - for backend
+2. tinymce - for embedding text editor
+3. html react parser - framework to easily embed html
+4. react hook form - to make form such as login page and logout page
+
+
+day 1 - (Account creation)
+We set up appwrite and from docs we write methods for signup, login, logout and get user  by creating a file auth.js which will take care of all the authentications stuff. This can be used as it is for another projects as well
+
+day 2 :- 
+create config.js in appwrite folder for further appwrite configuration which includes configuration for databases
+
+we learn use of query so that we can get only those posts whose status is active
+query lagane ke liye appwrite em indexes baana jaruri hota hai 
+
+in the same file we configure file upload services and preview files
+
+day 3 :-
+The goal is to set store for redux and set reducers
+we created folder store in src and the store.js in that folder
+we create another file authslice.js in the same folder
+
+then we build components in components folder in src 
+first we build a header and folder, we only made folder and then moved to app.jsx
+we first of all make a loading state so that while data is being fetched, conditional rendering occurs
+now we set provider in main.jsx
+We also make a new folder of pages in src
+
+day 4 :-
+The main plan is to design components 
+Header is further divided into basic header and logout button
+We further add more components
+footer components are directly imported from notes and we will design the header on our own
+we desgined a button for common use
+we get to know about another hook forwarddef
+
+day 5
+We start with design some more components starting with the drop down button in select.jsx
+next we build the postcard for the home
+next we move to react hook form to build the form for login 
+We write protection mechanism under authLayout
+
+day 6 
+we are going to bring in the real time editor, rte 
+Now we design the PostForm.jsx which which will handle all the events
+We handle PostForm where we have added methodds to check if the post is being updated or new post is being added 
+also we learn how to handle the slug value
+
+day 7
+After creating all the file we move back to main.jsx to provide routing for our app
+other than home every other element we are wrapping in authLaout which we have named as protected
