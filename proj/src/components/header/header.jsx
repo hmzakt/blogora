@@ -64,8 +64,7 @@ function Header() {
                 </li>
               ) : null
             )}
-
-            {/* Logout Button (only when authenticated) */}
+            
             {authStatus && (
               <li>
                 <LogoutBtn />

@@ -32,7 +32,7 @@ function AllPosts() {
     {/* Loading State (Optional) */}
     {posts.length === 0 && (
       <div className="text-center py-8">
-        <p className="text-gray-600">No posts found.</p>
+        <p className="text-gray-600">Hold on...</p>
       </div>
     )}
   </Container>
