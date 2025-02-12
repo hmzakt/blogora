@@ -29,8 +29,9 @@ function Home() {
   useEffect(() => {
     appwriteService.getPosts()
       .then((posts) => {
-        if (posts) {
-          setPosts(posts.documents);
+        if (posts && posts.documents) {
+          const sortedPosts = posts.documents.sort((a, b) => new Date(b.$createdAt) - new Date(a.$createdAt));
+          setPosts(sortedPosts);
         }
       })
       .catch((error) => {
