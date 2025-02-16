@@ -32,12 +32,12 @@ function App() {
   return (
     !loading ? (
 
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col overflow-x-hidden">
       {/* Header */}
       <Header className="w-full" />
 
       {/* Main Content */}
-      <main className="flex-grow p-4 md:p-6 lg:p-8">
+      <main className="flex-grow p-4 md:p-6 lg:p-8 w-full">
         <div className="max-w-7xl mx-auto">
           <Outlet />
         </div>

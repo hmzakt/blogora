@@ -37,7 +37,7 @@ export default function Post() {
 // console.log("Is Author:", isAuthor);
 console.log(post);
     return post ? (    
-      <div className="py-8 bg-gray-50 min-h-screen">
+      <div className="py-8 bg-[#cccccc]  min-h-screen">
       <Container>
         {/* Featured Image Section */}
         <div className="w-full flex justify-center mb-8 relative rounded-xl overflow-hidden">
@@ -65,11 +65,8 @@ console.log(post);
           <h1 className="text-4xl font-bold text-gray-800 mb-2">{post.title}</h1>
           <p className="text-gray-600 text-lg">By <span className="font-semibold text-gray-800">{post.authorname}</span></p>
         </div>
-        <div flex flex-wrap >
-          {post.likes}
-        </div>
         {/* Content Section */}
-        <div className="browser-css bg-white p-8 rounded-xl ">
+        <div className="browser-css bg-[#cccccc]  p-8 rounded-xl ">
           {parse(post.content)}
         </div>
       </Container>

@@ -15,27 +15,27 @@ function AllPosts() {
     }, [])
 
     return (
-        <div className="w-full py-8 bg-gray-50 min-h-screen">
-  <Container>
-    {/* Grid Layout for Post Cards */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="w-full py-8 bg-[#cccccc] min-h-screen">
+ 
+    
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-[#cccccc]">
       {posts.map((post) => (
         <div
           key={post.$id}
-          className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+          className=" bg-[#1a1a1a] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
         >
           <Postcard {...post} />
         </div>
       ))}
     </div>
 
-    {/* Loading State (Optional) */}
+    
     {posts.length === 0 && (
       <div className="text-center py-8">
         <p className="text-gray-600">Hold on...</p>
       </div>
     )}
-  </Container>
+
 </div>
     )
 }

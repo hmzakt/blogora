@@ -45,7 +45,7 @@ function Home() {
 
   if (posts.length === 0) {
     return (
-      <div className='flex flex-row flex-wrap'>
+      <div className='flex flex-row flex-wrap bg-[#cccccc]'>
         <div className="w-full lg:w-[80%] py-8 min-h-80">
           <Container>
             <div className="text-2xl mb-6 pl-8">
@@ -84,7 +84,7 @@ function Home() {
   }
 
   return (
-    <div className='flex flex-row flex-wrap'>
+    <div className='flex flex-row flex-wrap bg-[#cccccc]'>
       <div className="w-full lg:w-[80%] py-8 min-h-80">
         <Container>
           <div className="text-2xl mb-6 pl-8">
@@ -101,7 +101,7 @@ function Home() {
             <div className="flex justify-center mt-8">
               <button
                 onClick={loadMorePosts}
-                className="bg-black text-white px-4 py-2 rounded-3xl hover:bg-grey transition-colors"
+                className="bg-black text-gray-400 px-4 py-2 rounded-3xl hover:bg-grey transition-colors hover:text-white"
               >
                 Load More
               </button>
