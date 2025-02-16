@@ -16,33 +16,33 @@ export class Service{
    
     
 
-    async likesmanager({ userid, postid, isliked}) {     /////To implement later
-        try {
-            const documentId = slug || ID.unique();
+    // async likesmanager({ userid, postid, isliked}) {     /////To implement later
+    //     try {
+    //         const documentId = slug || ID.unique();
     
-            console.log("Data being sent to Appwrite:", {
-               userid,
-               postid,
-               isliked
-            });
+    //         console.log("Data being sent to Appwrite:", {
+    //            userid,
+    //            postid,
+    //            isliked
+    //         });
     
-            const response = await this.databases.createDocument(
-                conf.appwriteDatabaseId,
-                "67a0bc8b0030db4ce110",
-                documentId,
-                {
-                  userid,
-                  postid,
-                  isliked
-                }
-            );
-            console.log("Create response:", response);
-            return response;
-        } catch (error) {
-            console.error("Appwrite service :: likesmanager :: error", error);
-            throw error;
-        }
-    }
+    //         const response = await this.databases.createDocument(
+    //             conf.appwriteDatabaseId,
+    //             "67a0bc8b0030db4ce110",
+    //             documentId,
+    //             {
+    //               userid,
+    //               postid,
+    //               isliked
+    //             }
+    //         );
+    //         console.log("Create response:", response);
+    //         return response;
+    //     } catch (error) {
+    //         console.error("Appwrite service :: likesmanager :: error", error);
+    //         throw error;
+    //     }
+    // }
 
     async createPost({ title, slug, content, featuredimage, status, userid, authorname }) {
         try {
