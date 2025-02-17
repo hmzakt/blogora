@@ -1,4 +1,3 @@
-Blogora
 A fully functional blog application built with React for the frontend and Appwrite for backend management.
 This project includes user authentication, CRUD operations for blog posts, and a responsive design.
 
