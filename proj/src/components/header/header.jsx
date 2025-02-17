@@ -18,7 +18,7 @@ function Header() {
   ];
 
   return (
-    <header className="py-2 shadow bg-[#1a1a1a] w-full fixed">
+    <header className="py-2 shadow bg-[#1a1a1a] w-full">
       <Container>
         <nav className="flex items-center justify-between">
           <div className="flex items-center">
