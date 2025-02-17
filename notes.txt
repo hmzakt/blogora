@@ -50,3 +50,6 @@ also we learn how to handle the slug value
 day 7
 After creating all the file we move back to main.jsx to provide routing for our app
 other than home every other element we are wrapping in authLaout which we have named as protected
+
+
+Further UI changes and debugging and then deployment on vercel
