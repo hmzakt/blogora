@@ -18,7 +18,7 @@ function Header() {
   ];
 
   return (
-    <header className="py-2 shadow bg-[#1a1a1a] w-full">
+    <header className="py-2 shadow bg-[#1a1a1a] w-full fixed">
       <Container>
         <nav className="flex items-center justify-between">
           <div className="flex items-center">
@@ -40,7 +40,7 @@ function Header() {
           <ul 
             className={`md:flex md:ml-auto md:static absolute left-0 top-20 bg-[#1a1a1a] w-full md:w-auto md:bg-transparent md:space-x-4 hover:text-white 
               ${isOpen ? 'block' : 'hidden'} md:flex`}
-            style={{ zIndex: isOpen ? 1000 : 0 }} // Add z-index here
+            style={{ zIndex: isOpen ? 1000 : 0 }} 
           >
             {navItems.map((item) =>
               item.active ? (
